@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Полина Фролова](https://up.htmlacademy.ru/adaptive/22/user/1686387).
-* Наставник: `Неизвестно`.
+* Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
