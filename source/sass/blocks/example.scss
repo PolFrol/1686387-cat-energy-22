@@ -1,0 +1,33 @@
+.example {
+  background-color: $background-grey;
+}
+
+.example__title {
+  font-size: $fs-title;
+  line-height: $lh-title;
+  font-weight: 400;
+}
+
+.example__text {
+  font-family: $font-Arial;
+}
+
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__description {
+  font-family: $font-Arial;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__price {
+  line-height: $ls-text-big;
+  text-align: center;
+}
+
+.example__progress {
+  background-color: $special-grey-2;
+}

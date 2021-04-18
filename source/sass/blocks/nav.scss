@@ -1,0 +1,13 @@
+.nav {
+  text-align: center;
+  font-size: 20px;
+  line-height: $ls-text-big;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.nav__item {
+  margin-top: 22px;
+  margin-bottom: 24px;
+}
