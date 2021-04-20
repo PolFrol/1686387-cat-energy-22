@@ -1,9 +1,8 @@
 .special__title {
-  font-size: $fs-title;
-  line-height: $lh-title;
-  font-weight: 400;
+  font-size: $fs-accent;
+  line-height: $lh-accent;
+  font-weight: $fw-normal;
+  font-family: $font-Oswald;
+  color: $basic-black;
 }
 
-.special__text {
-  font-family: $font-Arial;
-}

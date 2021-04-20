@@ -2,6 +2,7 @@
   position: relative;
   text-align: center;
   text-transform: uppercase;
+  font-family: $font-Oswald;
   /*color: $basic-white;*/
 
   &::before {
@@ -11,7 +12,7 @@
     left: 50%;
     width: 320px;
     height: 302px;
-    background-image: url("../../img/promo/index-background-desktop.jpg");
+    background-image: url("../img/promo/index-background-desktop.jpg");
     background-color: $special-grey;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,7 +21,7 @@
 }
 
 .promo__title {
-  font-size: $fs-title;
+  font-size: $fs-accent;
   line-height: 36px;
   text-transform: none;
 }

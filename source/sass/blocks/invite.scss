@@ -3,12 +3,13 @@
 }
 
 .invite__title {
-  font-size: $fs-text-big;
-  font-weight: 400;
+  font-size: $fs-additional;
+  font-weight: $fw-normal;
   text-transform: uppercase;
+  font-family: $font-Oswald;
+  color: $dark-grey;
 }
 
 .invite__text {
-  line-height: $ls-text-big;
-  font-family: $font-Arial;
+  line-height: $lh-additional;
 }
