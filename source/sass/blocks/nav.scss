@@ -1,0 +1,14 @@
+.nav {
+  text-align: center;
+  font-size: 20px;
+  line-height: $lh-additional;
+  font-weight: $fw-medium;
+  text-transform: uppercase;
+  color: $basic-black;
+  font-family: $font-additional;
+}
+
+.nav__item {
+  margin-top: 22px;
+  margin-bottom: 24px;
+}

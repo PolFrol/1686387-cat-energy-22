@@ -1,0 +1,15 @@
+.invite {
+  margin: 28px 0;
+}
+
+.invite__title {
+  font-size: $fs-additional;
+  font-weight: $fw-normal;
+  text-transform: uppercase;
+  font-family: $font-additional;
+  color: $dark-grey;
+}
+
+.invite__text {
+  line-height: $lh-additional;
+}

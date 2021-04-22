@@ -1,0 +1,35 @@
+.example {
+  background-color: $background-grey;
+}
+
+.example__title {
+  font-size: $fs-accent;
+  line-height: $lh-accent;
+  font-weight: $fw-normal;
+  font-family: $font-additional;
+  color: $basic-black;
+}
+
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $font-additional;
+  color: $basic-black;
+}
+
+.example__description {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__price {
+  line-height: $lh-additional;
+  text-align: center;
+  font-family: $font-additional;
+  color: $basic-black;
+}
+
+.example__progress {
+  background-color: $special-light-grey;
+  font-family: $font-additional;
+}
