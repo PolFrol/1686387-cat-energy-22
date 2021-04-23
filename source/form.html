@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo">
           <img class="header__logo--img" src="./img/logo/logotype-mobile.svg" width="33" height="38" alt="КэтЭнерджи">
+          <img class="header__logo--name" src="./img/logo/main-logo.svg" width="101" height="18" alt="">
         </a>
         <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -33,9 +35,9 @@
       </nav>
     </header>
     <main>
-      <section class="intro">
-        <h2 class="intro__title">Подбор программы</h2>
-        <p class="intro__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <section class="promo">
+        <h2 class="promo__title">Подбор программы</h2>
+        <p class="promo__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </section>
       <section class="form">
         <form action="https://echo.htmlacademy.ru" method="POST">
@@ -109,7 +111,7 @@
           </fieldset>
           <div class="container">
             <a class="container__link" href="#">Отправить заявку</a>
-            <small class="container__legend">* — Обязательные поля</small>
+            <p class="container__legend">* — Обязательные поля</p>
           </div>
         </form>
       </section>
