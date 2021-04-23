@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo">
           <img class="header__logo--img" src="./img/logo/logotype-mobile.svg" width="33" height="38" alt="КэтЭнерджи">
+          <img class="header__logo--name" src="./img/logo/main-logo.svg" width="101" height="18" alt="">
         </a>
         <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -33,8 +35,8 @@
       </nav>
     </header>
     <main>
-      <section class="intro">
-        <h2 class="catalog__title">Каталог продукции</h2>
+      <section class="promo">
+        <h2 class="promo__title">Каталог продукции</h2>
       </section>
       <section class="catalog">
         <ul class="catalog__list">
@@ -265,8 +267,8 @@
           <li class="cataiog__item product">
             <div class="product__wrapper">
               <a class="product__more" href="#">Показать еще 100500 товаров</a>
-              <p>На самом деле вкусов гораздо больше!</p>
-              <a href="#">Показать все</a>
+              <p class="product__text">На самом деле вкусов гораздо больше!</p>
+              <a class="product__show" href="#">Показать все</a>
             </div>
           </li>
         </ul>
@@ -278,7 +280,7 @@
         <li class="add__item">
           <div class="add__wrapper">
             <a class="add__link" href="#">
-              <h3>Сахарозаменитель</h3>
+              <h3 class="add__heading">Сахарозаменитель</h3>
             </a>
             <table class="add__table">
               <thead>
@@ -289,8 +291,8 @@
               </thead>
               <tbody>
                 <tr class="add__features">
-                  <td>1 упаковка (100 г)</td>
-                  <td>200 Р.</td>
+                  <td class="add__cell">1 упаковка (100 г)</td>
+                  <td class="add__cell">200 Р.</td>
                 </tr>
               </tbody>
             </table>
@@ -301,7 +303,7 @@
         <li class="add__item">
           <div class="add__wrapper">
             <a class="add__link" href="#">
-              <h3>Питьевая вода</h3>
+              <h3 class="add__heading">Питьевая вода</h3>
             </a>
             <table class="add__table">
               <thead>
@@ -312,8 +314,8 @@
               </thead>
               <tbody>
                 <tr class="add__features">
-                  <td>5 литров</td>
-                  <td>50 Р.</td>
+                  <td class="add__cell">5 литров</td>
+                  <td class="add__cell">50 Р.</td>
                 </tr>
               </tbody>
             </table>
@@ -324,7 +326,7 @@
         <li class="add__item">
           <div class="add__wrapper">
             <a class="add__link" href="#">
-              <h3>Молоко</h3>
+              <h3 class="add__heading">Молоко</h3>
             </a>
             <table class="add__table">
               <thead>
@@ -335,8 +337,8 @@
               </thead>
               <tbody>
                 <tr class="add__features">
-                  <td>1 литр</td>
-                  <td>100 Р.</td>
+                  <td class="add__cell">1 литр</td>
+                  <td class="add__cell">100 Р.</td>
                 </tr>
               </tbody>
             </table>
@@ -347,7 +349,7 @@
         <li class="add__item">
           <div class="add__wrapper">
             <a class="add__link" href="#">
-              <h3>Витамины</h3>
+              <h3 class="add__heading">Витамины</h3>
             </a>
             <table class="add__table">
               <thead>
@@ -358,8 +360,8 @@
               </thead>
               <tbody>
                 <tr class="add__features">
-                  <td>1 упаковка (30 г)</td>
-                  <td>300 Р.</td>
+                  <td class="add__cell">1 упаковка (30 г)</td>
+                  <td class="add__cell">300 Р.</td>
                 </tr>
               </tbody>
             </table>
