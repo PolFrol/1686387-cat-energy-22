@@ -1,0 +1,34 @@
+.product__title {
+  font-family: $font-additional;
+  font-size: $fs-additional;
+  line-height: $lh-additional;
+  color: $special-extra_dark-grey;
+  font-weight: $fw-normal;
+}
+
+.product__cell,
+.product__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__order {
+  font-family: $font-additional;
+  font-size: $fs-additional;
+  line-height: $lh-additional;
+  /*color: $basic-white;*/
+}
+
+.product__more {
+  font-family: $font-additional;
+  font-size: $fs-additional;
+  line-height: $lh-additional;
+  color: $dark-grey;
+}
+
+.product__show {
+  font-family: $font-additional;
+  font-size: $fs-additional;
+  line-height: $lh-additional;
+  color: $special_dark-grey;
+}
