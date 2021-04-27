@@ -3,3 +3,12 @@
   padding-top: 39px;
   padding-bottom: 22px;
 }
+
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+
+}
