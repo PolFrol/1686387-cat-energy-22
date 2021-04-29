@@ -5,15 +5,6 @@
 .example__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-  }
 }
 
 .example__title {
@@ -27,6 +18,7 @@
 .example__features {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -35,11 +27,16 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
   }
 }
 
 .example__list {
   display: flex;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
 }
 
 .example__number {

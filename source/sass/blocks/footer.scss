@@ -5,9 +5,18 @@
 }
 
 .footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    gap: 156px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 410px;
   }
 }

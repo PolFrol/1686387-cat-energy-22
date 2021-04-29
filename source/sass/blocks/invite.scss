@@ -1,7 +1,7 @@
 .invite {
   margin: 28px 0;
-  padding: 0 20px;
   display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;

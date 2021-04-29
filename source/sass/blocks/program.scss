@@ -1,15 +1,12 @@
 .program__wrapper {
   margin-bottom: 27px;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
-    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 71px;
-    padding: 0 110px;
   }
 }
 
@@ -32,6 +29,7 @@
 .program__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;

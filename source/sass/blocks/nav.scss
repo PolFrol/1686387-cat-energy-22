@@ -12,16 +12,10 @@
   margin-bottom: 24px;
 }
 
-@media (min-width: $tablet-width) {
-  .nav__list {
+.nav__list {
+  @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
-    width: 440px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .nav__list {
-    width: 478px;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
