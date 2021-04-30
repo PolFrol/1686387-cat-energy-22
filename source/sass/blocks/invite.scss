@@ -1,5 +1,12 @@
 .invite {
   margin: 28px 0;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 0 71px;
+  }
 }
 
 .invite__title {

@@ -1,5 +1,4 @@
 .nav {
-  text-align: center;
   font-size: 20px;
   line-height: $lh-additional;
   font-weight: $fw-medium;
@@ -11,4 +10,12 @@
 .nav__item {
   margin-top: 22px;
   margin-bottom: 24px;
+}
+
+.nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }

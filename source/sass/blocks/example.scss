@@ -2,12 +2,41 @@
   background-color: $background-grey;
 }
 
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .example__title {
   font-size: $fs-accent;
   line-height: $lh-accent;
   font-weight: $fw-normal;
   font-family: $font-additional;
   color: $basic-black;
+}
+
+.example__features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+}
+
+.example__list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
 }
 
 .example__number {
@@ -24,7 +53,7 @@
 
 .example__price {
   line-height: $lh-additional;
-  text-align: center;
+  /*text-align: center;*/
   font-family: $font-additional;
   color: $basic-black;
 }
