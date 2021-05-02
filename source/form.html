@@ -7,74 +7,80 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo">
-          <img class="header__logo--img" src="./img/logo/logotype-mobile.svg" width="33" height="38" alt="КэтЭнерджи">
-          <img class="header__logo--name" src="./img/logo/main-logo.svg" width="101" height="18" alt="">
-        </a>
-        <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="header__wrapper box">
+        <div class="header__image">
+          <a class="header__logo">
+            <img class="header__logo--img" src="./img/logo/mobile-logotype.svg" width="191" height="38" alt="КэтЭнерджи">
+          </a>
+          <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="nav__item nav__item--active">
+              <a class="nav__link">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="nav__item nav__item--active">
-            <a class="nav__link">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
-      <section class="promo">
+      <section class="promo box--form promo--addtitonal">
         <h2 class="promo__title">Подбор программы</h2>
         <p class="promo__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </section>
-      <section class="form">
+      <section class="form box--form">
         <form action="https://echo.htmlacademy.ru" method="POST">
+          <div class="form__wrapper">
+            <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Форма</legend>
+              <div>
+                <div class="form__content">
+                  <label class="form__label" for="form-name">Имя:*</label>
+                  <input class="form__input" id="form-name" type="text" name="name" placeholder="Барсик" required>
+                </div>
+                <div class="form__content">
+                  <label class="form__label" for="form-mass">Вес (кг):*</label>
+                  <input class="form__input" id="form-mass" type="number" name="mass" placeholder="7" required>
+                </div>
+                <div class="form__content">
+                  <label class="form__label" for="form-age">Возраст (лет):</label>
+                  <input class="form__input" id="form-age" type="number" name="age" placeholder="7">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="visually-hidden">Цель</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__input" type="radio" name="aim-input" value="slim" id="filter-slim" checked>
+                  <label class="form__label form__label--radio" for="filter-slim">Похудение</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="radio" name="aim-input" value="muscles" id="filter-muscles">
+                  <label class="form__label form__label--radio" for="filter-muscles">Набор массы</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__input" type="radio" name="aim-input" value="nothing" id="filter-nothing">
+                  <label class="form__label form__label--radio" for="filter-nothing">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Форма</legend>
-            <div class="form__content">
-              <label class="form__label" for="form-name">Имя:*</label>
-              <input class="form__input" id="form-name" type="text" name="name" placeholder="Барсик" required>
-            </div>
-            <div class="form__content">
-              <label class="form__label" for="form-mass">Вес (кг):*</label>
-              <input class="form__input" id="form-mass" type="number" name="mass" placeholder="7" required>
-            </div>
-            <div class="form__content">
-              <label class="form__label" for="form-age">Возраст (лет):</label>
-              <input class="form__input" id="form-age" type="number" name="age" placeholder="7">
-            </div>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="visually-hidden">Цель</legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <input class="form__input" type="radio" name="aim-input" value="slim" id="filter-slim" checked>
-                <label class="form__label form__label--radio" for="filter-slim">Похудение</label>
-              </li>
-              <li class="form__item">
-                <input class="form__input" type="radio" name="aim-input" value="muscles" id="filter-muscles">
-                <label class="form__label form__label--radio" for="filter-muscles">Набор массы</label>
-              </li>
-              <li class="form__item">
-                <input class="form__input" type="radio" name="aim-input" value="nothing" id="filter-nothing">
-                <label class="form__label form__label--radio" for="filter-nothing">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
+            <div class="form__wrapper">
               <div class="form__content">
                 <label class="form__label" for="form-mail">E-mail:*</label>
                 <input class="form__input form__input--mail" id="form-mail" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
@@ -83,14 +89,17 @@
                 <label class="form__label" for="form-phone">Телефон:*</label>
                 <input class="form__input form__input--phone" id="form-phone" type="tel" name="phone" placeholder="+7 (960) 900-60-90" required>
               </div>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <label class="form__legend">Комментарий</legend>
-            <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="form__comments">
+              <div class="form__comments--title"><label class="form__legend">Комментарий</label></div>
+              <div><textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea></div>
+            </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__legend">Дополнительно</legend>
-            <ul class="form__list">
+            <legend class="form__legend form__legend--extra">Дополнительно</legend>
+            <ul class="form__list form__list--checkbox">
               <li class="form__item">
                 <input class="form__checkbox" type="checkbox" name="sweetener" id="extra-sweetener" checked>
                 <label class="form__label form__label--checkbox" for="extra-sweetener">Сахарозаменитель</label>
@@ -115,16 +124,16 @@
           </div>
         </form>
       </section>
-      <section class="map">
+      <section class="map map--additional">
+          <div class="box invite">
+            <h2 class="invite__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <p class="invite__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
         <img class="map__piece" src="img/location.png" width="320" height="362" alt="Карта">
-        <div class="map__holder invite">
-          <h2 class="invite__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="invite__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper box">
         <a class="footer__logo">
           <img class="footer__logo--img" src="./img/logo/main-logo.svg" width="128" height="24" alt="КэтЭнерджи">
         </a>

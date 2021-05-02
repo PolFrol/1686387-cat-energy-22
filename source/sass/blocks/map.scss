@@ -1,3 +1,11 @@
+.map--additional {
+  background-color: $basic_grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}
+
 .map__piece {
   position: relative;
   width: 100%;
