@@ -1,3 +1,31 @@
+.add__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add__wrapper--additional {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 79px;
+  }
+}
+
+.add__holder {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .add__title {
   font-family: $font-additional;
   font-size: 24px;
