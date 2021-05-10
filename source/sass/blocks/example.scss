@@ -39,6 +39,14 @@
   text-align: center;
 }
 
+.example__item {
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+  padding-top: 13px;
+  min-width: 124px;
+  height: 56px;
+}
+
 .example__number {
   font-size: 24px;
   line-height: 24px;
@@ -49,13 +57,18 @@
 .example__description {
   font-size: 12px;
   line-height: 12px;
+  background-color: $background-grey;
+  max-width: 86px;
+  margin: auto;
+  padding: 10px 15px;
 }
 
 .example__price {
   line-height: $lh-additional;
-  /*text-align: center;*/
   font-family: $font-additional;
   color: $basic-black;
+  text-transform: uppercase;
+  padding-top: 25px;
 }
 
 .example__progress {

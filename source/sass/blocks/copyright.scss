@@ -1,4 +1,19 @@
+.copyright {
+  position: relative;
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
 .copyright__link {
   font-size: $fs-additional;
   color: $special_dark-grey;
+}
+
+.copyright__link svg {
+  position: absolute;
+  left: 137px;
+  top: -5px;
 }

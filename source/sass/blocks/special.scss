@@ -11,6 +11,7 @@
 }
 
 .special__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +28,26 @@
     flex-direction: row;
     gap: 0;
   }
+}
+
+.special__text {
+  margin: 0 0 24px 80px;
+}
+
+.special__item--leaf {
+  background: url("../img/special/leaf.svg") no-repeat;
+}
+
+.special__item--tub {
+  background: url("../img/special/tub.svg") no-repeat;
+}
+
+.special__item--fork {
+  background: url("../img/special/eat.svg") no-repeat;
+}
+
+.special__item--clock {
+  background: url("../img/special/alarm.svg") no-repeat;
 }
 
 .special__title {

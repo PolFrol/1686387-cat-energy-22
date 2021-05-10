@@ -20,3 +20,12 @@
     gap: 410px;
   }
 }
+
+.footer__logo {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+  }
+}
+
