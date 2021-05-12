@@ -5,7 +5,9 @@
   font-family: $font-additional;
   color: $basic-white;
   margin-bottom: 22px;
+}
 
+.promo__img {
   &::before {
     content: "";
     position: absolute;
@@ -41,6 +43,7 @@
 
 .promo--addtitonal {
   text-align: left;
+  color: $basic-black;
 }
 
 .promo__wrapper {
@@ -52,6 +55,7 @@
     color: $basic-black;
     align-items: flex-start;
     margin-left: 87px;
+    position: relative;
   }
 }
 
@@ -76,12 +80,18 @@
 .promo__photo {
   @media (min-width: $tablet-width) {
     order: 2;
-  }
-  /*@media (min-width: $tablet-width) {
-    position: absolute;
+    /*position: absolute;
     top: 202px;
     left: 29px;
     width: 709px;
-    height: 600px;
-  }*/
+    height: 600px;*/
+  }
+}
+
+.promo__link {
+  padding: 11px 73px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+  }
 }

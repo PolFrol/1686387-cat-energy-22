@@ -27,6 +27,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    padding-top: 36px;
   }
 }
 
@@ -123,6 +124,10 @@
   padding: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 53px;
+    padding: 53px 278px 53px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 51px 55px 52px;
   }
 }

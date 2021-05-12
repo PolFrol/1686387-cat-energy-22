@@ -1,9 +1,11 @@
 .social {
+  padding: 0 77px 0 73px;
   border-top: 1px solid $special-light-grey;
   border-bottom: 1px solid $special-light-grey;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0;
   }
 }
 
