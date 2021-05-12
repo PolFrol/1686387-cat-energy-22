@@ -54,8 +54,12 @@
   @media (min-width: $tablet-width) {
     color: $basic-black;
     align-items: flex-start;
-    margin-left: 87px;
+    padding-left: 117px;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
   }
 }
 

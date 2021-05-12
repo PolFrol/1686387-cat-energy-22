@@ -32,7 +32,9 @@
 }
 
 .program__item--slim {
-  background: url("../img/program/cat_slim.svg") 22px 21px no-repeat;
+  background-image: url("../img/program/cat_slim.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 21px;
 
   @media (min-width: $tablet-width) {
     background-size: 200px 211px;
@@ -46,7 +48,9 @@
 }
 
 .program__item--pro {
-  background: url("../img/program/cat_pro.svg") 13px 24px no-repeat;
+  background-image: url("../img/program/cat_pro.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
 
   @media (min-width: $tablet-width) {
     background-size: 268px 200px;
@@ -90,7 +94,8 @@
   height: 10px;
   top: 5px;
   left: 100px;
-  background: url("../img/program/arrow.svg") no-repeat;
+  background-image: url("../img/program/arrow.svg");
+  background-repeat: no-repeat;
 }
 
 .program__list {

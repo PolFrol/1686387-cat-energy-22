@@ -1,8 +1,12 @@
+.header {
+  position: relative;
+}
+
 .header__wrapper {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
-  position: relative;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -16,11 +20,14 @@
   }
 }
 
+.header__image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
 .header__toggle {
-  position: absolute;
-  display: block;
-  top: 23px;
-  right: 20px;
   width: 25px;
   height: 25px;
   border: none;
@@ -33,24 +40,24 @@
   }
 }
 
-.header__image--closed .header__toggle::before {
+.header--closed .header__toggle::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 22px;
+  right: 20px;
   width: 24px;
   height: 2px;
   background-color: $basic-black;
   box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
 }
 
-.header__image--opened .header__toggle {
+.header--opened .header__toggle {
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30px;
+    right: 20px;
     width: 24px;
     height: 2px;
     background-color: $basic-black;
@@ -66,13 +73,12 @@
   }
 }
 
-.header__image {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-}
-
 .header__logo--img {
   width: 191px;
+}
+
+@media (max-width: $modile-width-only) {
+  .header--closed .header__nav {
+    display: none;
+  }
 }

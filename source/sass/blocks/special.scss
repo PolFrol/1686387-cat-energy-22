@@ -31,23 +31,27 @@
 }
 
 .special__text {
-  margin: 0 0 24px 80px;
+  margin: 0 0 26px 80px;
 }
 
 .special__item--leaf {
-  background: url("../img/special/leaf.svg") no-repeat;
+  background-image: url("../img/special/leaf.svg");
+  background-repeat: no-repeat;
 }
 
 .special__item--tub {
-  background: url("../img/special/tub.svg") no-repeat;
+  background-image: url("../img/special/tub.svg");
+  background-repeat: no-repeat;
 }
 
 .special__item--fork {
-  background: url("../img/special/eat.svg") no-repeat;
+  background-image: url("../img/special/eat.svg");
+  background-repeat: no-repeat;
 }
 
 .special__item--clock {
-  background: url("../img/special/alarm.svg") no-repeat;
+  background-image: url("../img/special/alarm.svg");
+  background-repeat: no-repeat;
 }
 
 .special__title {
@@ -56,4 +60,5 @@
   font-weight: $fw-normal;
   font-family: $font-additional;
   color: $basic-black;
+  margin-bottom: 38px;
 }
