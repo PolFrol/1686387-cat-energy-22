@@ -11,6 +11,7 @@
 }
 
 .special__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,10 +30,35 @@
   }
 }
 
+.special__text {
+  margin: 0 0 26px 80px;
+}
+
+.special__item--leaf {
+  background-image: url("../img/special/leaf.svg");
+  background-repeat: no-repeat;
+}
+
+.special__item--tub {
+  background-image: url("../img/special/tub.svg");
+  background-repeat: no-repeat;
+}
+
+.special__item--fork {
+  background-image: url("../img/special/eat.svg");
+  background-repeat: no-repeat;
+}
+
+.special__item--clock {
+  background-image: url("../img/special/alarm.svg");
+  background-repeat: no-repeat;
+}
+
 .special__title {
   font-size: $fs-accent;
   line-height: $lh-accent;
   font-weight: $fw-normal;
   font-family: $font-additional;
   color: $basic-black;
+  margin-bottom: 38px;
 }
