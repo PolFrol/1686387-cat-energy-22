@@ -1,7 +1,12 @@
+.header {
+  position: relative;
+}
+
 .header__wrapper {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -15,12 +20,6 @@
   }
 }
 
-.header__toggle {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .header__image {
   display: flex;
   align-items: center;
@@ -28,6 +27,66 @@
   flex-shrink: 0;
 }
 
+.header__toggle {
+  width: 25px;
+  height: 25px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header--closed .header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+}
+
+.header--opened .header__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.header--nojs .header__toggle {
+  display: none;
+}
+
+.header--nojs .header__nav {
+  display: block;
+}
+
 .header__logo--img {
   width: 191px;
+}
+
+@media (max-width: $modile-width-only) {
+  .header--closed .header__nav {
+    display: none;
+  }
 }
