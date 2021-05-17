@@ -6,6 +6,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 81px;
   }
 }
 
@@ -14,9 +20,16 @@
   font-size: $fs-additional;
   line-height: $lh-additional;
   text-transform: uppercase;
-  /*color: $basic-white;*/
+  padding: 12px 78px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 0;
+  }
 }
 
 .container__legend {
   line-height: 16px;
+  margin-top: 21px;
+  margin-bottom: 32px;
 }
