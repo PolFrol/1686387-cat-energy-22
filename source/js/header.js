@@ -4,5 +4,5 @@ var headerToggle = document.querySelector('.header__toggle');
 navHeader.classList.remove('header--nojs');
 
 headerToggle.onclick = function() {
-navHeader.classList.toggle('header--opened');
+  navHeader.classList.toggle('header--opened');
 };

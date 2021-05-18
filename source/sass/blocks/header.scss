@@ -1,5 +1,10 @@
 .header {
   position: relative;
+  border-bottom: 1px solid $special-light-grey;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .header__wrapper {

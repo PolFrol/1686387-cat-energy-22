@@ -23,3 +23,15 @@
     width: 114px;
   }
 }
+
+.copyright__link--logo:hover path {
+  fill: $basic-green;
+}
+
+.copyright__link--logo:active path {
+  opacity: 0.3;
+}
+
+.copyright__link:active span {
+  opacity: 0.3;
+}

@@ -20,3 +20,16 @@
   margin-top: 20px;
   margin-bottom: 21px;
 }
+
+.social__link--vkontakte:hover path,
+.social__link--instagram:hover path {
+  fill: $basic-green;
+}
+
+.social__link:active path {
+  opacity: 0.3;
+}
+
+.social__link--facebook:hover path {
+  stroke: $basic-green;
+}

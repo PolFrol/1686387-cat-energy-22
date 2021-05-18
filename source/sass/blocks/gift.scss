@@ -1,6 +1,70 @@
+.gift {
+  position: relative;
+  top: 39px;
+  background-image: url("../img/catalog/gift-photo-mobile.png");
+  width: 280px;
+  height: 289px;
+  margin-bottom: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 101px;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/catalog/icon_gift.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 200px;
+    top: 69px;
+    margin-bottom: 146px;
+
+    &::after {
+      top: 57px;
+      left: 78px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    top: 0;
+    margin-bottom: 86px;
+
+    &::after {
+      top: 56px;
+      left: 84px;
+    }
+  }
+}
+
 .gift__text {
+  position: absolute;
+  width: 161px;
+  bottom: 43px;
+  left: 58px;
   font-size: $fs-additional;
   line-height: $lh-additional;
   text-align: center;
-  /*color: $basic-white;*/
+  color: $basic-white;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    left: 423px;
+    top: 71px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 41px;
+    top: 185px;
+    text-align: center;
+  }
 }
