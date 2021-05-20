@@ -23,3 +23,19 @@
     width: 114px;
   }
 }
+
+.copyright__link--logo {
+  color: $social-dark-grey;
+}
+
+.copyright__link--logo:hover {
+  color: $basic-green;
+}
+
+.copyright__link--logo:active {
+  color: $basic-green--active;
+}
+
+.copyright__link:active span {
+  color: $basic-black--active;
+}

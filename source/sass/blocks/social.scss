@@ -20,3 +20,15 @@
   margin-top: 20px;
   margin-bottom: 21px;
 }
+
+.social__link {
+  color: $social-dark-grey;
+}
+
+.social__link:hover {
+  color: $basic-green;
+}
+
+.social__link:active {
+  color: $basic-green--active;
+}

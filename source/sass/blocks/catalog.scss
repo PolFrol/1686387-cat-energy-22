@@ -12,3 +12,9 @@
     }
   }
 }
+
+@media (max-width: $modile-width-only) {
+  .catalog__list:last-child {
+    border-bottom: 1px solid $extra-light-grey;
+  }
+}

@@ -36,4 +36,12 @@
 
 .nav__link {
   color: $basic-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
