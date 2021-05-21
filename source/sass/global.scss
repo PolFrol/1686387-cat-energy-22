@@ -26,6 +26,11 @@ body {
   font-weight: $fw-normal;
   color: $special-dark-grey;
   overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    font-size: $fs-additional;
+    line-height: 24px;
+  }
 }
 
 .box {
