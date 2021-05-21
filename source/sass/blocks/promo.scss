@@ -13,12 +13,19 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 320px;
+    min-width: 320px;
     height: 302px;
-    background-image: url("../img/promo/index-background-desktop.jpg");
+    background-image: url("../img/promo/background-cat.jpg");
     background-color: $special-grey;
     background-repeat: no-repeat;
     z-index: -2;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/background-cat2x.jpg");
+      background-size: auto 320px 302px auto;
+      background-position: center;
+    }
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -34,9 +41,30 @@
     left: 0;
     background-color: $spesial-light-green;
     z-index: -1;
+    background-position: center;
 
     @media (min-width: $tablet-width) {
       display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__img {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100;
+      left: 100;
+      min-width: 720px;
+      height: 694px;
+      background-image: url("../img/promo/background-desktop-cat.png");
+      background-color: $special-grey;
+      background-repeat: no-repeat;
+      z-index: -2;
+      background-position: center;
     }
   }
 }
@@ -50,16 +78,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
     align-items: flex-start;
     padding-left: 117px;
     position: relative;
+    margin-bottom: 531px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 190px;
+    margin-bottom: 267px;
   }
 }
 
@@ -72,6 +103,16 @@
 
   @media (min-width: $tablet-width) {
     margin: 41px 0;
+    font-size: $fs-tablet-accent;
+    line-height: $lh-tablet-accent;
+    text-align: left;
+    padding-right: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 414px;
+    padding: 0;
+    margin-top: 82px;
   }
 }
 
@@ -79,23 +120,45 @@
   line-height: 14px;
   margin-bottom: 29px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+    font-size: $fs-tablet;
+    line-height: $lh-additional;
+  }
 }
 
 .promo__photo {
   @media (min-width: $tablet-width) {
     order: 2;
-    /*position: absolute;
-    top: 202px;
+    position: absolute;
+    top: 242px;
     left: 29px;
     width: 709px;
-    height: 600px;*/
+    height: 600px;
+    z-index: -5;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 448px;
   }
 }
 
 .promo__link {
   padding: 11px 73px;
 
+  &:hover {
+    background-color: $basic-dark-green;
+  }
+
+  &:active {
+    color: $basic-white--active;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 14px 26px;
+    font-size: $fs-tablet;
+    line-height: $lh-additional;
   }
 }

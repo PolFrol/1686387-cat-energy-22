@@ -1,6 +1,68 @@
-.slider__toggle {
+.slider {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 195px;
+  margin: 25px auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    padding-left: 56px;
+    padding-right: 61px;
+  }
+}
+
+.slider__button {
   font-size: $fs-additional;
   line-height: $lh-additional;
   font-family: $font-additional;
   color: $basic-black;
+  text-transform: uppercase;
+  border: none;
+  background-color: $background-grey;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__toggle--scale {
+  width: 84px;
+  height: 14px;
+  background-color: $basic-white;
+  border-radius: 6px;
+  border: 1px solid $special-grey;
+  margin: 4px 10px 0 10px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: $special-grey-toggle;
+    border: none;
+  }
+}
+
+.slider__toggle {
+  position: absolute;
+  top: 8px;
+  left: 60px;
+  width: 35px;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    top: -10px;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $basic-white;
+    border: 1px solid $special-grey;
+    box-shadow: (0 1px 3px $special-shadow);
+    background-image: url("../../img/example/slider_control.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px 8px;
+  }
 }

@@ -1,10 +1,12 @@
 .invite {
   display: flex;
   align-items: center;
+  background-color: $basic-white;
+  padding: 28px 19px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 0 71px;
+    padding: 66px 71px 51px 71px;
 
     @media (min-width: $desktop-width) {
       z-index: 2;
@@ -24,6 +26,7 @@
   text-transform: uppercase;
   font-family: $font-additional;
   color: $dark-grey;
+  margin: 0;
 }
 
 .invite__text {

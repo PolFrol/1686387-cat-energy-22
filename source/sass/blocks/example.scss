@@ -1,5 +1,21 @@
 .example {
   background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient($basic-white 60%, $background-grey 40%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient($basic-white 25%, $background-grey 25% 100%);
+    padding-bottom: 64px;
+  }
+}
+
+.example__holder {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .example__wrapper {
@@ -13,6 +29,25 @@
   font-weight: $fw-normal;
   font-family: $font-additional;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: $fs-tablet-accent;
+    line-height: $lh-tablet-accent;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+
+.example__text {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+  }
 }
 
 .example__features {
@@ -37,6 +72,10 @@
   gap: 30px;
   align-items: center;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .example__item {
@@ -52,6 +91,7 @@
   line-height: 24px;
   font-family: $font-additional;
   color: $basic-black;
+  text-transform: uppercase;
 }
 
 .example__description {
@@ -61,6 +101,16 @@
   max-width: 86px;
   margin: auto;
   padding: 10px 15px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    max-width: 97px;
+    padding-top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-grey;
+  }
 }
 
 .example__price {
@@ -72,6 +122,14 @@
 }
 
 .example__progress {
-  background-color: $special-light-grey;
   font-family: $font-additional;
 }
+
+.example__progress--before {
+  margin-top: 42px;
+}
+
+.example__progress--after {
+  display: none;
+}
+
