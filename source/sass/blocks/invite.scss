@@ -20,6 +20,14 @@
   }
 }
 
+.invite--additional {
+  background-color: $basic_grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic_white;
+  }
+}
+
 .invite__title {
   font-size: $fs-additional;
   font-weight: $fw-normal;
