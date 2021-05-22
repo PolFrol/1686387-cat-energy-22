@@ -54,6 +54,7 @@
 
 @media (min-width: $desktop-width) {
   .map__piece--wrapper {
+    position: relative;
     width: 100%;
     min-height: 400px;
     background-image: url("../img/footer/map-desktop.png");

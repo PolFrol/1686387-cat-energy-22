@@ -7,16 +7,16 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding: 66px 71px 51px 71px;
+  }
 
-    @media (min-width: $desktop-width) {
-      z-index: 2;
-      position: absolute;
-      background-color: $basic-white;
-      width: 570px;
-      height: 201px;
-      top: 95px;
-      left: 110px;
-    }
+  @media (min-width: $desktop-width) {
+    z-index: 2;
+    position: absolute;
+    background-color: $basic-white;
+    width: 570px;
+    height: 201px;
+    top: 95px;
+    left: 110px;
   }
 }
 
