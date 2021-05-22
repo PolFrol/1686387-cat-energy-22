@@ -116,6 +116,12 @@
   }
 }
 
+.promo__title--addtitonal {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .promo__intro {
   line-height: 14px;
   margin-bottom: 29px;
@@ -125,6 +131,20 @@
     margin-bottom: 49px;
     font-size: $fs-tablet;
     line-height: $lh-additional;
+  }
+}
+
+.promo__text {
+  @media (min-width: $tablet-width) {
+    font-size: $fs-tablet;
+    line-height: 30px;
+    padding-right: 241px;
+    padding-top: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 323px;
+    padding-right: 0;
   }
 }
 

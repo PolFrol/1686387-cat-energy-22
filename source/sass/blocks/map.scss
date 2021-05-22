@@ -1,5 +1,9 @@
 .map--additional {
-  background-color: $basic_white;
+  background-color: $basic_grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic_white;
+  }
 }
 
 .map__piece {
@@ -15,5 +19,48 @@
 .map__desktop {
   @media (min-width: $desktop-width) {
     position: relative;
+  }
+}
+
+.map__image {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.map__piece--wrapper {
+  width: auto;
+  min-height: 362px;
+  background-color: $background-grey;
+  background-image: url("../img/footer/map-mobile.png");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile2x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map__piece--wrapper {
+    width: 100%;
+    min-height: 400px;
+    background-image: url("../img/footer/map-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/footer/map-tablet2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__piece--wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background-image: url("../img/footer/map-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/footer/map-desktop2x.png");
+    }
   }
 }
