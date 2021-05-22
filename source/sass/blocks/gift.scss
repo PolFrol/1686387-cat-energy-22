@@ -9,6 +9,10 @@
   background-size: cover;
   background-position: center;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/catalog/gift-photo-mobile2x.png");
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -25,6 +29,11 @@
     min-height: 200px;
     top: 69px;
     margin-bottom: 146px;
+    background-image: url("../img/catalog/gift-photo-tablet.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/catalog/gift-photo-tablet2x.png");
+    }
 
     &::after {
       top: 57px;
@@ -37,6 +46,11 @@
     height: 100%;
     top: 0;
     margin: 0;
+    background-image: url("../img/catalog/gift-photo-desktop.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/catalog/gift-photo-desktop2x.png");
+    }
 
     &::after {
       top: 56px;

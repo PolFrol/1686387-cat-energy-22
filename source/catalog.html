@@ -4,13 +4,21 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header class="header">
       <div class="header__wrapper box">
         <div class="header__image">
-          <a class="header__logo">
-            <img class="header__logo--img" src="./img/logo/mobile-logotype.svg" width="191" height="38" alt="КэтЭнерджи">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="./img/logo/logo-desktop-cat.svg">
+              <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet-cat.svg">
+              <img class="header__logo--img" src="./img/logo/mobile-logo-cat.svg" width="191" height="38" alt="КэтЭнерджи">
+            </picture>
           </a>
           <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
@@ -45,7 +53,14 @@
             <div class="product__wrapper">
               <div class="product__holder">
                 <a class="product__link" href="#">
-                  <img class="product__photo" src="./img/catalog/little-feed.jpg" width="68" height="86" alt="Корм маленький">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="./img/catalog/orange-little-tablet.webp 1x, ./img/catalog/orange-little-tablet2x.webp 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="./img/catalog/orange-little-tablet.webp 1x, ./img/catalog/orange-little-tablet2x.webp 2x">
+                    <source type="image/webp" srcset="./img/catalog/orange-little-mobile.webp 1x, ./img/catalog/orange-little-mobile2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="./img/catalog/orange-little-tablet.png 1x, ./img/catalog/orange-little-tablet2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./img/catalog/orange-little-tablet.png 1x, ./img/catalog/orange-little-tablet2x.png 2x">
+                    <img class="product__photo" src="./img/catalog/orange-little-mobile.png" srcset="./img/catalog/orange-little-mobile.png" width="140" height="112" alt="Корм маленький">
+                  </picture>
                 </a>
                 <div class="product__info">
                   <h3 class="product__title"><a class="product__link" href="#">Cat Energy Pro 500 г</a></h3>
@@ -81,7 +96,14 @@
             <div class="product__wrapper">
               <div class="product__holder">
                 <a class="product__link" href="#">
-                  <img class="product__photo" src="./img/catalog/big-feed-orange.jpg" width="84" height="101" alt="Корм большой">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="./img/catalog/orange-big-desktop.webp 1x, ./img/catalog/orange-big-desktop2x.webp 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="./img/catalog/orange-big-tablet.webp 1x, ./img/catalog/orange-big-tablet2x.webp 2x">
+                    <source type="image/webp" srcset="./img/catalog/orange-big-mobile.webp 1x, ./img/catalog/orange-big-mobile2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="./img/catalog/orange-big-desktop.png 1x, ./img/catalog/orange-big-desktop2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./img/catalog/orange-big-tablet.png 1x, ./img/catalog/orange-big-tablet2x.png 2x">
+                    <img class="product__photo" src="./img/catalog/orange-big-mobile.png" srcset="./img/catalog/orange-big-mobile2x.png" width="140" height="112" alt="Корм большой">
+                  </picture>
                 </a>
                 <div class="product__info">
                   <h3 class="product__title"><a class="product__link" href="#">Cat Energy Pro 1000 г</a></h3>
@@ -117,7 +139,14 @@
             <div class="product__wrapper">
               <div class="product__holder">
                 <a class="product__link" href="#">
-                  <img class="product__photo" src="./img/catalog/little-feed-green.jpg" width="68" height="78" alt="Корм маленький">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="./img/catalog/green-little-tablet.webp 1x, ./img/catalog/green-little-tablet2x.webp 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="./img/catalog/green-little-tablet.webp 1x, ./img/catalog/green-little-tablet2x.webp 2x">
+                    <source type="image/webp" srcset="./img/catalog/green-little-mobile.webp 1x, ./img/catalog/green-little-mobile2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="./img/catalog/green-little-tablet.png 1x, ./img/catalog/green-little-tablet2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./img/catalog/green-little-tablet.png 1x, ./img/catalog/green-little-tablet2x.png 2x">
+                    <img class="product__photo" src="./img/catalog/green-little-mobile.png" srcset="./img/catalog/green-little-mobile2x.png" width="140" height="112" alt="Корм маленький">
+                  </picture>
                 </a>
                 <div class="product__info">
                   <h3 class="product__title"><a class="product__link" href="#">Cat Energy Pro 500 г</a></h3>
@@ -153,7 +182,14 @@
             <div class="product__wrapper">
               <div class="product__holder">
                 <a class="product__link" href="#">
-                  <img class="product__photo" src="./img/catalog/big-feed-green.jpg" width="84" height="101" alt="Корм большой">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="./img/catalog/green-big-desktop.webp 1x, ./img/catalog/green-big-desktop2x.webp 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="./img/catalog/green-big-tablet.webp 1x, ./img/catalog/green-big-tablet2x.webp 2x">
+                    <source type="image/webp" srcset="./img/catalog/green-big-mobile.webp 1x, ./img/catalog/green-big-mobile2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="./img/catalog/green-big-desktop.png 1x, ./img/catalog/green-big-desktop2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./img/catalog/green-big-tablet.png 1x, ./img/catalog/green-big-tablet2x.png 2x">
+                    <img class="product__photo" src="./img/catalog/green-big-mobile.png" srcset="./img/catalog/green-big-mobile2x.png" width="140" height="112" alt="Корм большой">
+                  </picture>
                 </a>
                 <div class="product__info">
                   <h3 class="product__title"><a class="product__link" href="#">Cat Energy Pro 1000 г</a></h3>
@@ -189,7 +225,14 @@
             <div class="product__wrapper">
               <div class="product__holder">
                 <a class="product__link" href="#">
-                  <img class="product__photo" src="./img/catalog/little-feed-blue.jpg" width="68" height="78" alt="Корм маленький">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="./img/catalog/blue-little-desktop.webp 1x, ./img/catalog/blue-little-desktop2x.webp 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="./img/catalog/blue-little-tablet.webp 1x, ./img/catalog/blue-little-tablet2x.webp 2x">
+                    <source type="image/webp" srcset="./img/catalog/blue-little-mobile.webp 1x, ./img/catalog/blue-little-mobile2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="./img/catalog/blue-little-desktop.png 1x, ./img/catalog/blue-little-desktop2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./img/catalog/blue-little-tablet.png 1x, ./img/catalog/blue-little-tablet2x.png 2x">
+                    <img class="product__photo" src="./img/catalog/blue-little-mobile.png" srcset="./img/catalog/blue-little-mobile2x.png" width="140" height="112" alt="Корм маленький">
+                  </picture>
                 </a>
                 <div class="product__info">
                   <h3 class="product__title"><a class="product__link" href="#">Cat Energy Slim 500 г</a></h3>
@@ -225,7 +268,14 @@
             <div class="product__wrapper">
               <div class="product__holder">
                 <a class="product__link" href="#">
-                  <img class="product__photo" src="./img/catalog/big-feed-blue.jpg" width="84" height="100" alt="Корм большой">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="./img/catalog/blue-big-desktop.webp 1x, ./img/catalog/blue-big-desktop2x.webp 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="./img/catalog/blue-big-tablet.webp 1x, ./img/catalog/blue-big-tablet2x.webp 2x">
+                    <source type="image/webp" srcset="./img/catalog/blue-big-mobile.webp 1x, ./img/catalog/blue-big-mobile2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="./img/catalog/blue-big-desktop.png 1x, ./img/catalog/blue-big-desktop2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./img/catalog/blue-big-tablet.png 1x, ./img/catalog/blue-big-tablet2x.png 2x">
+                    <img class="product__photo" src="./img/catalog/blue-big-mobile.png" srcset="./img/catalog/blue-big-mobile2x.png" width="140" height="112" alt="Корм большой">
+                  </picture>
                 </a>
                 <div class="product__info">
                   <h3 class="product__title"><a class="product__link" href="#">Cat Energy Slim 1000 г</a></h3>
@@ -261,7 +311,14 @@
             <div class="product__wrapper">
               <div class="product__holder">
                 <a class="product__link" href="#">
-                  <img class="product__photo" src="./img/catalog/little-feed-violet.jpg" width="72" height="84" alt="Корм маленький">
+                  <picture>
+                    <source type="image/webp" media="(min-width:1440px)" srcset="./img/catalog/purpure-little-desktop.webp 1x, ./img/catalog/purpure-little-desktop2x.webp 2x">
+                    <source type="image/webp" media="(min-width:768px)" srcset="./img/catalog/purpure-little-tablet.webp 1x, ./img/catalog/purpure-little-tablet2x.webp 2x">
+                    <source type="image/webp" srcset="./img/catalog/purpure-little-mobile.webp 1x, ./img/catalog/purpure-little-mobile2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="./img/catalog/purpure-little-desktop.png 1x, ./img/catalog/purpure-little-desktop2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./img/catalog/purpure-little-tablet.png 1x, ./img/catalog/purpure-little-tablet2x.png 2x">
+                    <img class="product__photo" src="./img/catalog/purpure-little-mobile.png" srcset="./img/catalog/purpure-little-mobile2x.png" width="140" height="112" alt="Корм маленький">
+                  </picture>
                 </a>
                 <div class="product__info">
                   <h3 class="product__title"><a class="product__link" href="#">Cat Energy Slim 500 г</a></h3>
@@ -423,14 +480,16 @@
               </div>
             </div>
           </div>
-          <iframe class="map__piece" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.4575548880666!2d30.321076084584927!3d59.93865813419732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620986085419!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" width="320" height="362" alt="Карта"></iframe>
+          <div class="map__piece--wrapper box--map">
+            <iframe class="map__piece" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.4575548880666!2d30.321076084584927!3d59.93865813419732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620986085419!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" width="320" height="362"></iframe>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper box">
         <a class="footer__logo">
-          <img class="footer__logo--img" src="./img/logo/main-logo.svg" width="128" height="24" alt="КэтЭнерджи">
+          <img class="footer__logo--img" src="./img/logo/footer-logo.svg" width="128" height="24" alt="КэтЭнерджи">
         </a>
         <div class="footer__social social">
           <ul class="social__list">
