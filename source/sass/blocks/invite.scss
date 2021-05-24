@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 66px 71px 51px 71px;
+    padding: 60px 71px 51px 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,10 +35,23 @@
   font-family: $font-additional;
   color: $dark-grey;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $fs-tablet;
+    line-height: 21px;
+  }
 }
 
 .invite__text {
   line-height: $lh-additional;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .invite__text--desktop {
@@ -51,7 +64,9 @@
 }
 
 .invite__text--desktop p {
-  @media (max-width: $modile-width-only) {
-    margin: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
   }
 }

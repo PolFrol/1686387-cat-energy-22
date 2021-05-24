@@ -51,19 +51,30 @@
 
 @media (min-width: $desktop-width) {
   .promo__img {
+    top: -113px;
     position: relative;
+    min-width: 720px;
+    height: 694px;
+    background-image: url("../img/promo/background-desktop-cat.png");
+    background-repeat: no-repeat;
+    z-index: -2;
+    background-position: right;
 
     &::before {
       content: "";
       position: absolute;
-      top: 100;
-      left: 100;
-      min-width: 720px;
+      width: 720px;
       height: 694px;
-      background-image: url("../img/promo/background-desktop-cat.png");
-      background-color: $special-grey;
-      background-repeat: no-repeat;
-      z-index: -2;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: $spesial-light-green;
+      background-position: right;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo/background-desktop-cat2x.jpg");
+      background-size: auto 720px 694px auto;
       background-position: center;
     }
   }
@@ -90,7 +101,8 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 190px;
-    margin-bottom: 267px;
+    top: 141px;
+    margin-bottom: 0;
   }
 }
 
@@ -102,7 +114,7 @@
   margin: 26px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 41px 0;
+    margin: 61px 0 41px 0;
     font-size: $fs-tablet-accent;
     line-height: $lh-tablet-accent;
     text-align: left;

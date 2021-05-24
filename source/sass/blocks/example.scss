@@ -2,7 +2,7 @@
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient($basic-white 60%, $background-grey 40%);
+    background: linear-gradient($basic-white 58%, $background-grey 42%);
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +33,7 @@
   @media (min-width: $tablet-width) {
     font-size: $fs-tablet-accent;
     line-height: $lh-tablet-accent;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,6 +45,10 @@
 .example__text {
   margin-top: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 86px;
@@ -73,6 +78,10 @@
   align-items: center;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    gap: 42px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 55px;
   }
@@ -84,6 +93,12 @@
   padding-top: 13px;
   min-width: 124px;
   height: 56px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+    height: 77px;
+    padding-top: 16px;
+  }
 }
 
 .example__number {
@@ -92,6 +107,11 @@
   font-family: $font-additional;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
@@ -103,9 +123,11 @@
   padding: 10px 15px;
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
     background-color: $basic-white;
-    max-width: 97px;
-    padding-top: 11px;
+    max-width: 127px;
+    padding: 9px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,6 +141,18 @@
   color: $basic-black;
   text-transform: uppercase;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $fs-tablet;
+    line-height: $lh-additional;
+    max-width: 174px;
+    text-align: right;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 300px;
+  }
 }
 
 .example__progress {
@@ -131,4 +165,8 @@
 
 .example__progress--after {
   display: none;
+}
+
+.example__features span {
+  padding-top: 9px;
 }

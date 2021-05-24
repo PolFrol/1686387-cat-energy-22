@@ -83,3 +83,11 @@ body {
   color: $basic-white;
   text-align: center;
 }
+
+.box-mobile {
+  @media (max-width: 767px) {
+    min-width: $modile-width;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}

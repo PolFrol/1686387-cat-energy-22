@@ -3,12 +3,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 195px;
-  margin: 25px auto;
+  margin: 25px auto 0 auto;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
-    padding-left: 56px;
-    padding-right: 61px;
+    padding: 0 56px 67px 61px;
   }
 }
 
@@ -22,6 +22,11 @@
   background-color: $background-grey;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $fs-tablet;
+    line-height: 30px;
+  }
 }
 
 .slider__toggle--scale {

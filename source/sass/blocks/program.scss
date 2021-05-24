@@ -58,6 +58,7 @@
   @media (min-width: $desktop-width) {
     background-size: 100px 106px;
     background-position: 52px 41px;
+    padding: 41px 31px 55px 52px;
   }
 }
 
@@ -75,7 +76,7 @@
   @media (min-width: $desktop-width) {
     background-size: 134px 100px;
     background-position: 34px 47px;
-    padding: 41px 51px 55px 52px;
+    padding: 41px 61px 55px 52px;
   }
 }
 
@@ -88,10 +89,12 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 48px;
     border: none;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 39px;
+    padding-top: 50px;
+    padding-bottom: 28px;
   }
 }
 
@@ -102,24 +105,43 @@
   color: $basic-black;
   text-transform: uppercase;
 
+  &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background-image: url("../img/program/long-arrow.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:active {
+    color: $basic-black--active;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 10px;
+    top: 5px;
+    left: 100px;
+    background-image: url("../img/program/arrow.svg");
+    background-repeat: no-repeat;
+
+    &:active {
+      color: $basic-black--active;
+    }
+
+    @media (min-width: $tablet-width) {
+      left: 132px;
+      top: 10px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: $fs-tablet;
-  }
-}
-
-.program__catalog::after {
-  position: absolute;
-  content: "";
-  width: 32px;
-  height: 10px;
-  top: 5px;
-  left: 100px;
-  background-image: url("../img/program/arrow.svg");
-  background-repeat: no-repeat;
-
-  @media (min-width: $tablet-width) {
-    left: 132px;
-    top: 10px;
   }
 }
 
@@ -129,7 +151,9 @@
   align-items: center;
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -145,7 +169,12 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
-      margin-right: 80px;
     }
+  }
+}
+
+.program__title--pro {
+  @media (min-width: $desktop-width) {
+    padding-left: 90px;
   }
 }
