@@ -29,6 +29,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .nav__list--desktop .nav__item--active {
+    border-bottom: 2px solid $basic-white;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .nav__item--active {
     border-bottom: 2px solid $basic-green;
@@ -50,8 +56,10 @@
     font-size: 18px;
     line-height: 24px;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .nav__link--desktop {
     color: $basic-white;
   }
 }

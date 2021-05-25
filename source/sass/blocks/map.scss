@@ -22,13 +22,9 @@
   }
 }
 
-.map__image {
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
-}
-
 .map__piece--wrapper {
+  @include box--map;
+  position: absolute;
   width: auto;
   min-height: 362px;
   background-color: $background-grey;
@@ -42,6 +38,7 @@
 
 @media (min-width: $tablet-width) {
   .map__piece--wrapper {
+    @include box--map;
     width: 100%;
     min-height: 400px;
     background-image: url("../img/footer/map-tablet.png");
@@ -54,7 +51,8 @@
 
 @media (min-width: $desktop-width) {
   .map__piece--wrapper {
-    position: relative;
+    @include box--map;
+    position: absolute;
     width: 100%;
     min-height: 400px;
     background-image: url("../img/footer/map-desktop.png");

@@ -31,7 +31,7 @@
       </svg>
     </div>
 
-    <header class="header header--opened header--nojs">
+    <header class="header header--opened header--nojs header--desktop">
       <div class="header__wrapper">
         <div class="box-mobile">
           <div class="header__image">
@@ -46,19 +46,19 @@
           </div>
         </div>
         <nav class="header__nav nav">
-          <ul class="nav__list">
+          <ul class="nav__list nav__list--desktop">
             <li class="nav__item nav__item--active">
-              <a class="nav__link">
+              <a class="nav__link nav__link--desktop">
                 Главная
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="catalog.html">
+              <a class="nav__link nav__link--desktop" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="form.html">
+              <a class="nav__link nav__link--desktop" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -73,7 +73,7 @@
           <h2 class="visually-hidden">Промо Cat Energy</h2>
           <p class="promo__title">Функциональное питание для котов</p>
           <p class="promo__intro">Занялся собой? Займись котом!</p>
-          <picture>
+          <picture class="promo__wrapper--picture">
             <source type="image/webp" media="(min-width:1440px)" srcset="./img/promo/cat-food-desktop.webp 1x, ./img/promo/cat-food-desktop2x.webp 2x">
             <source type="image/webp" media="(min-width:768px)" srcset="./img/promo/cat-food-tablet.webp 1x, ./img/promo/cat-food-tablet2x.webp 2x">
             <source type="image/webp" srcset="./img/promo/cat-food-pro.webp 1x, ./img/promo/cat-food-pro2x.webp 2x">
@@ -138,12 +138,15 @@
                 <p class="example__description">затрачено времени</p>
               </li>
             </ul>
-            <p class="example__price">Затраты на питание: <span>15000 руб.</span></p>
+            <p class="example__price">
+              <span>Затраты на питание:</span>
+              <span>15000 руб.</span></p>
           </div>
         </div>
-        <div class="example__holder--toggle box">
-          <div class="example-toggie">
-            <picture>
+        <div class="example__holder--toggle">
+          <div class="example__toggie">
+            <div class="example__wrapper--photo-before">
+              <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="./img/example/before-desktop-cat.webp 1x, ./img/example/before-desktop-cat2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/example/before-tablet-cat.webp 1x, ./img/example/before-tablet-cat2x.webp 2x">
               <source type="image/webp" srcset="./img/example/before-mobile-cat.webp 1x, ./img/example/before-mobile-cat2x.webp 2x">
@@ -151,7 +154,9 @@
               <source media="(min-width: 768px)" srcset="./img/example/before-tablet-cat.png, ./img/example/before-tablet-cat2x.png">
               <img class="example__progress example__progress--before" src="./img/example/before-mobile-cat.png" srcset="./img/example/before-mobile-cat2x.png" width="311" height="232" alt="Кот до">
             </picture>
-            <picture>
+            </div>
+            <div class="example__wrapper--photo-after">
+              <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="./img/example/after-desktop-cat.webp 1x, ./img/example/after-desktop-cat2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/example/after-tablet-cat.webp 1x, ./img/example/after-tablet-cat2x.webp 2x">
               <source type="image/webp" srcset="./img/example/after-mobile-cat.webp 1x, ./img/example/after-mobile-cat2x.webp 2x">
@@ -159,14 +164,13 @@
               <source media="(min-width: 768px)" srcset="./img/example/after-tablet-cat.png, ./img/example/after-tablet-cat2x.png">
               <img class="example__progress example__progress--after" src="./img/example/after-mobile-cat.png" srcset="./img/example/after-mobile-cat2x.png" width="251" height="240" alt="Кот после">
             </picture>
+            </div>
             <div class="slider">
               <button class="slider__button slider__toggle--current" type="button">Было</button>
               <div class="slider__toggle--control">
-                <div class="slider__toggle--scale">
-                  <div class="slider__toggle--bar"></div>
-                </div>
+                    <input class="slider__range" type="range" min="0" max="100" id="range">
+                    <label class="visually-hidden" for="range">Пример Бориса</label>
               </div>
-              <div class="slider__toggle" aria-label="Маркер переключения кота"></div>
               <button class="slider__button" type="button">Стало</button>
             </div>
           </div>
@@ -184,9 +188,8 @@
               </div>
             </div>
           </div>
-          <div class="map__piece--wrapper box--map">
-            <iframe class="map__piece" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.4575548880666!2d30.321076084584927!3d59.93865813419732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620986085419!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" width="320" height="362"></iframe>
-          </div>
+          <div class="map__piece--wrapper"></div>
+          <iframe class="map__piece" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.4575548880666!2d30.321076084584927!3d59.93865813419732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620986085419!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" width="320" height="362"></iframe>
         </div>
       </section>
     </main>

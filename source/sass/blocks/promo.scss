@@ -5,6 +5,12 @@
   font-family: $font-additional;
   color: $basic-white;
   margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 111px;
+    z-index: 2;
+  }
 }
 
 .promo__img {
@@ -15,7 +21,7 @@
     left: 0;
     min-width: 320px;
     height: 302px;
-    background-image: url("../img/promo/background-cat.jpg");
+    background-image: url("../img/promo/background-cat.png");
     background-color: $special-grey;
     background-repeat: no-repeat;
     z-index: -2;
@@ -49,40 +55,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .promo__img {
-    top: -113px;
-    position: relative;
-    min-width: 720px;
-    height: 694px;
-    background-image: url("../img/promo/background-desktop-cat.png");
-    background-repeat: no-repeat;
-    z-index: -2;
-    background-position: right;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 720px;
-      height: 694px;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      background-color: $spesial-light-green;
-      background-position: right;
-    }
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo/background-desktop-cat2x.jpg");
-      background-size: auto 720px 694px auto;
-      background-position: center;
-    }
-  }
-}
-
 .promo--addtitonal {
   text-align: left;
   color: $basic-black;
+  position: relative;
+  top: 0;
 }
 
 .promo__wrapper {
@@ -96,13 +73,17 @@
     align-items: flex-start;
     padding-left: 117px;
     position: relative;
-    margin-bottom: 531px;
+    margin-bottom: 55px;
+    min-height: 810px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 190px;
-    top: 141px;
+    background-position: 500px 0;
+    background-size: 552px 499px;
+    top: 28px;
     margin-bottom: 0;
+    min-height: 550px;
   }
 }
 
@@ -164,16 +145,19 @@
   @media (min-width: $tablet-width) {
     order: 2;
     position: absolute;
-    top: 242px;
+    top: 255px;
     left: 29px;
     width: 709px;
     height: 600px;
-    z-index: -5;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
     top: 0;
-    left: 448px;
+    transform: translateX(95%);
+    width: 552px;
+    height: 499px;
+    position: absolute;
   }
 }
 
@@ -193,4 +177,9 @@
     font-size: $fs-tablet;
     line-height: $lh-additional;
   }
+}
+
+.promo__title--catalog {
+  margin-bottom: 41px;
+  width: 100%;
 }

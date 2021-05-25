@@ -222,6 +222,10 @@
   &:focus {
     border: 1px solid $special_dark-grey;
   }
+
+  &:invalid {
+    border: 2px solid $status_error;
+  }
 }
 
 .form__input--error {
@@ -340,6 +344,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    left: -37px;
+  }
 }
 
 .form__item:not(:last-child) {
@@ -381,6 +390,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: -32px;
+  }
 }
 
 .form__input--phone {

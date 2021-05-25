@@ -19,6 +19,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -145,10 +146,16 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      right: 0;
+      right: 78px;
       background-image: url("../img/special/4.svg");
       background-repeat: no-repeat;
       z-index: -3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: 0;
     }
   }
 }

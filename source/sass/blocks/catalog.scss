@@ -3,12 +3,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 59px;
+    row-gap: 20px;
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 80px;
-      row-gap: 63px;
+      row-gap: 17px;
     }
   }
 }
