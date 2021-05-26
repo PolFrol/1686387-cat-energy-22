@@ -52,7 +52,7 @@
   &::before {
     position: absolute;
     content: "";
-    left: calc(100% - 20px);
+    left: calc(100% - 330px);
     top: 16px;
     border-top: 2px solid $basic-green;
     width: 100vw;
@@ -65,7 +65,7 @@
     line-height: 36px;
 
     &::before {
-      left: calc(100% - 40px);
+      left: calc(100% - 840px);
       top: 14px;
       border-top: 2px solid $basic-green;
       width: 100vw;
