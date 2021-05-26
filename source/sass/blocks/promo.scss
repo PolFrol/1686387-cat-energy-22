@@ -13,7 +13,9 @@
   }
 }
 
-.promo__img {
+.promo-img {
+  @include box--map;
+
   &::before {
     content: "";
     position: absolute;
@@ -56,6 +58,15 @@
 }
 
 .promo--addtitonal {
+  @include box;
+  text-align: left;
+  color: $basic-black;
+  position: relative;
+  top: 0;
+}
+
+.promo--form {
+  @include box--form;
   text-align: left;
   color: $basic-black;
   position: relative;
@@ -110,7 +121,15 @@
 }
 
 .promo__title--addtitonal {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-top: 73px;
+    margin-bottom: 45px;
     width: 100%;
   }
 }
@@ -163,14 +182,6 @@
 
 .promo__link {
   padding: 11px 73px;
-
-  &:hover {
-    background-color: $basic-dark-green;
-  }
-
-  &:active {
-    color: $basic-white--active;
-  }
 
   @media (min-width: $tablet-width) {
     padding: 14px 26px;

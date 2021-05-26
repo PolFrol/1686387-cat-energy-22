@@ -1,3 +1,9 @@
+.catalog {
+  @media (min-width: $tablet-width) {
+    @include box;
+  }
+}
+
 .catalog__list {
   @media (min-width: $tablet-width) {
     display: grid;

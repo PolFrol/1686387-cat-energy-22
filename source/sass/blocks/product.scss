@@ -1,13 +1,20 @@
+.product {
+  border-top: 1px solid $extra-light-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .product:not(:last-child) {
     background: linear-gradient(0deg, $basic_grey 78%, $basic-white 22%);
   }
 }
 
-@media (min-width: $tablet-width) {
-  .product:last-child {
-    background-color: $basic-white;
-    border: 2px solid $basic_grey;
+@media (max-width: $modile-width-only) {
+  .product__wrapper {
+    @include box;
   }
 }
 
@@ -15,7 +22,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid $extra-light-grey;
   padding: 13px 0 24px 0;
   position: relative;
 
@@ -25,7 +31,7 @@
   }
 }
 
-.product__more--food {
+.product__more-food {
   @media (min-width: $tablet-width) {
     padding-top: 120px;
   }
@@ -36,7 +42,7 @@
   }
 }
 
-.product__wrapper-more-food {
+.product__wrapper--more-food {
   @media (min-width: $tablet-width) {
     border: 2px solid $basic_grey;
   }
@@ -115,26 +121,13 @@
   }
 }
 
-.product__order--extra {
-  @media (min-width: $tablet-width) {
-    padding: 10px auto 13px auto;
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 10px 92px;
-    margin: 0;
-    width: 244px;
-  }
-}
-
 .product__more {
   font-family: $font-additional;
   font-size: $fs-additional;
   line-height: $lh-additional;
   color: $dark-grey;
   text-transform: uppercase;
-  padding-top: 56px;
+  padding-top: 65px;
 
   &::before {
     content: "";
@@ -142,7 +135,7 @@
     width: 30px;
     height: 30px;
     top: 25px;
-    left: 125px;
+    left: 144px;
     background-image: url("../img/catalog/plus.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -181,6 +174,7 @@
   background-color: $basic_grey;
   padding: 10px 94px;
   margin-top: 9px;
+  transition: all 0.2s;
 
   &:hover {
     background-color: $extra-light-grey;

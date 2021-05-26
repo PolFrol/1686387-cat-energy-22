@@ -13,13 +13,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    column-gap: 131px;
-    padding-top: 47px;
-    padding-bottom: 27px;
+    padding-top: 64px;
+    padding-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 410px;
     padding-top: 57px;
     padding-bottom: 27px;
   }
@@ -29,11 +27,11 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin: auto;
+    margin: auto auto auto 0;
   }
 }
 
-.footer__logo--img {
+.footer__logo-img {
   &:hover {
     opacity: 0.8;
   }

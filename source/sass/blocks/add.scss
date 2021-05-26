@@ -22,7 +22,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .add__wrapper--additional {
+  .add__wrapper-additional {
     display: grid;
     grid-template-columns: 1fr 245px;
     column-gap: 79px;
@@ -135,4 +135,35 @@
 
 .add__list:first-child {
   border-top: 1px solid $special-grey;
+}
+
+
+.add__order {
+  font-family: $font-additional;
+  font-size: $fs-additional;
+  line-height: $lh-additional;
+  text-transform: uppercase;
+  padding: 10px 109px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 93px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 53px;
+  }
+}
+
+.add__order--extra {
+  @media (min-width: $tablet-width) {
+    padding: 10px auto 13px auto;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 92px;
+    margin: 0;
+    width: 244px;
+  }
 }

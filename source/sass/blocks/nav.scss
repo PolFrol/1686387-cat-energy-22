@@ -30,7 +30,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .nav__list--desktop .nav__item--active {
+  .nav__list--main .nav__item--active {
     border-bottom: 2px solid $basic-white;
   }
 }
@@ -59,7 +59,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .nav__link--desktop {
+  .nav__link--main {
     color: $basic-white;
   }
 }

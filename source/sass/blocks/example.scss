@@ -183,7 +183,7 @@
   }
 }
 
-.example__wrapper--photo-before {
+.example__wrapper-photo-before {
   position: relative;
   width: 100%;
 
@@ -198,13 +198,13 @@
   }
 }
 
-.example__wrapper--photo-after {
+.example__wrapper-photo-after {
   position: absolute;
   top: 30px;
 
   @media (min-width: $tablet-width) {
     top: 55px;
-    right: 0;
+    right: -5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -229,6 +229,6 @@
   padding-top: 9px;
 }
 
-.example__holder--toggle {
+.example__holder-toggle {
   position: relative;
 }

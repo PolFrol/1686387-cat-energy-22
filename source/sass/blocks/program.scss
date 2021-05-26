@@ -118,6 +118,10 @@
 
   &:active {
     color: $basic-black--active;
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   &::after {
@@ -129,10 +133,6 @@
     left: 100px;
     background-image: url("../img/program/arrow.svg");
     background-repeat: no-repeat;
-
-    &:active {
-      color: $basic-black--active;
-    }
 
     @media (min-width: $tablet-width) {
       left: 132px;
@@ -175,6 +175,6 @@
 
 .program__title--pro {
   @media (min-width: $desktop-width) {
-    padding-left: 90px;
+    padding-left: 74px;
   }
 }

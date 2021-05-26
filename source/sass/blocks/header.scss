@@ -30,29 +30,28 @@
 
 .header--desktop {
   @media (min-width: $desktop-width) {
-    @include box--map;
     position: relative;
-    background: linear-gradient(to right, $basic-white 50%, $spesial-light-green 50%);
     min-height: 694px;
     margin-bottom: 82px;
+  }
+}
 
-    &::before {
-      @include box--map;
-      position: absolute;
-      content: "";
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 100%;
+.header__wrapper--desktop::before {
+  @media (min-width: $desktop-width) {
+    @include box--map;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient($spesial-light-green 100%, transparent 0%),
+      url("../img/promo/background-desktop-cat.png");
+
+    @media (min-resolution: 2dppx) {
       background: linear-gradient($spesial-light-green 100%, transparent 0%),
-        url("../img/promo/background-desktop-cat.png");
+        url("../img/promo/background-desktop-cat2x.png");
       background-size: cover, cover;
-
-      @media (min-resolution: 2dppx) {
-        background: linear-gradient($spesial-light-green 100%, transparent 0%),
-          url("../img/promo/background-desktop-cat2x.png");
-        background-size: cover, cover;
-      }
     }
   }
 }
