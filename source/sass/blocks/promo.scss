@@ -5,9 +5,17 @@
   font-family: $font-additional;
   color: $basic-white;
   margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 111px;
+    z-index: 2;
+  }
 }
 
-.promo__img {
+.promo-img {
+  @include box--map;
+
   &::before {
     content: "";
     position: absolute;
@@ -15,7 +23,7 @@
     left: 0;
     min-width: 320px;
     height: 302px;
-    background-image: url("../img/promo/background-cat.jpg");
+    background-image: url("../img/promo/background-cat.png");
     background-color: $special-grey;
     background-repeat: no-repeat;
     z-index: -2;
@@ -49,29 +57,20 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .promo__img {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 100;
-      left: 100;
-      min-width: 720px;
-      height: 694px;
-      background-image: url("../img/promo/background-desktop-cat.png");
-      background-color: $special-grey;
-      background-repeat: no-repeat;
-      z-index: -2;
-      background-position: center;
-    }
-  }
-}
-
 .promo--addtitonal {
+  @include box;
   text-align: left;
   color: $basic-black;
+  position: relative;
+  top: 0;
+}
+
+.promo--form {
+  @include box--form;
+  text-align: left;
+  color: $basic-black;
+  position: relative;
+  top: 0;
 }
 
 .promo__wrapper {
@@ -85,12 +84,17 @@
     align-items: flex-start;
     padding-left: 117px;
     position: relative;
-    margin-bottom: 531px;
+    margin-bottom: 55px;
+    min-height: 810px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 190px;
-    margin-bottom: 267px;
+    background-position: 500px 0;
+    background-size: 552px 499px;
+    top: 28px;
+    margin-bottom: 0;
+    min-height: 550px;
   }
 }
 
@@ -102,7 +106,7 @@
   margin: 26px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 41px 0;
+    margin: 61px 0 41px 0;
     font-size: $fs-tablet-accent;
     line-height: $lh-tablet-accent;
     text-align: left;
@@ -117,7 +121,15 @@
 }
 
 .promo__title--addtitonal {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-top: 73px;
+    margin-bottom: 45px;
     width: 100%;
   }
 }
@@ -152,33 +164,33 @@
   @media (min-width: $tablet-width) {
     order: 2;
     position: absolute;
-    top: 242px;
+    top: 255px;
     left: 29px;
     width: 709px;
     height: 600px;
-    z-index: -5;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
     top: 0;
-    left: 448px;
+    transform: translateX(95%);
+    width: 552px;
+    height: 499px;
+    position: absolute;
   }
 }
 
 .promo__link {
   padding: 11px 73px;
 
-  &:hover {
-    background-color: $basic-dark-green;
-  }
-
-  &:active {
-    color: $basic-white--active;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 14px 26px;
     font-size: $fs-tablet;
     line-height: $lh-additional;
   }
+}
+
+.promo__title--catalog {
+  margin-bottom: 41px;
+  width: 100%;
 }

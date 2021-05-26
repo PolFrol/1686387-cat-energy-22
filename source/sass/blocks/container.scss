@@ -7,11 +7,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 61px;
-    margin-bottom: 72px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
     column-gap: 81px;
+    margin-bottom: 80px;
   }
 }
 
