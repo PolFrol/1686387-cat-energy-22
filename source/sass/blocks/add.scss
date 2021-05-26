@@ -63,9 +63,10 @@
     margin-top: 68px;
     font-size: $fs-accent;
     line-height: 36px;
+    padding-left: 36px;
 
     &::before {
-      left: calc(100% - 330px);
+      left: calc(100% - 300px);
       top: 14px;
       border-top: 2px solid $basic-green;
       width: 100vw;
@@ -77,18 +78,24 @@
       transform-origin: left;
       transform: rotate(180deg);
       top: 14px;
-      left: -40px;
+      left: 0;
       border-top: 2px solid $basic-green;
       width: 100vw;
     }
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 0;
+
     &::before {
       left: calc(100% - 840px);
       top: 14px;
       border-top: 2px solid $basic-green;
       width: 100vw;
+    }
+
+    &::after {
+      left: -40px;
     }
   }
 }
