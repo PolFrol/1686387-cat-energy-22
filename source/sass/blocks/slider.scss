@@ -1,172 +1,122 @@
 .slider {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 195px;
-  margin: 25px auto 0 auto;
-  padding-bottom: 25px;
+    margin-bottom: 86px;
 
-  @media (min-width: $tablet-width) {
-    max-width: 100%;
-    padding: 0 56px 39px 61px;
-    margin-top: 0;
-    top: -27px;
-  }
+    @media (max-width: $adaptive-width) {
+        margin-bottom: $spacing-4xl;
+    }
+    
+    &__title {
+        margin-bottom: $spacing-xl;
 
-  @media (min-width: $desktop-width) {
-    left: 70px;
-    top: 7px;
-    padding: 0 56px 67px 61px;
-  }
-}
-
-.slider__button {
-  font-size: $fs-additional;
-  line-height: $lh-additional;
-  font-family: $font-additional;
-  color: $basic-black;
-  text-transform: uppercase;
-  border: none;
-  border-bottom: 1px dotted $basic-black--active;
-  background-color: $background-grey;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-
-  &:hover {
-    border-bottom: 1px solid $special-grey-hover;
-  }
-
-  &:active {
-    border-bottom: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: $fs-tablet;
-    line-height: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $basic_grey;
-  }
-}
-
-.slider__range {
-  position: relative;
-  display: block;
-  width: 84px;
-  margin: 2px 17px 0 18px;
-  appearance: none;
-  background: transparent;
-
-  @media (min-width: $tablet-width) {
-    width: 428px;
-    height: 40px;
-    margin-top: 0;
-    margin-left: 26px;
-    margin-right: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 428px;
-    height: 40px;
-    margin-left: 26px;
-    margin-right: 19px;
-  }
-}
-
-.slider__range::-webkit-slider-thumb {
-  appearance: none;
-  border: none;
-  height: 6px;
-  width: 35px;
-  border-radius: 6px;
-  background: $basic-green;
-  cursor: pointer;
-  margin: 3px 0 0 0;
-
-  @media (min-width: $tablet-width) {
-    height: 31px;
-    width: 31px;
-    border-radius: 50%;
-    background: $basic-green;
-    border: 12px solid $basic-white;
-    cursor: pointer;
-    box-shadow: 0 0 0 1px $special-grey-toggle, 0 1px 3px $special-grey-toggle;
-    margin-top: -13px;
-
-    &:hover {
-      box-shadow: 0 0 0 1px $special-grey-toggle, 0 2px 4px $special-shadow;
+        @media (max-width: $adaptive-width) {
+            margin-top: $spacing-s;
+        }
     }
 
-    &:active {
-      box-shadow: 0 0 0 1px $basic-green, 0 1px 3px $special-shadow;
-    }
-  }
-}
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.slider__range::-webkit-slider-runnable-track {
-  width: 84px;
-  height: 14px;
-  background: $basic-white;
-  border: 1px solid $special-grey-toggle;
-  padding: 0 4px 0 5px;
-  border-radius: 6px;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    height: 6px;
-    cursor: pointer;
-    background: $special-grey-toggle;
-    border-radius: 3px;
-    border: none;
-  }
-}
-
-.slider__range::-moz-range-thumb {
-  appearance: none;
-  border: none;
-  height: 6px;
-  width: 35px;
-  border-radius: 6px;
-  background: $basic-green;
-  cursor: pointer;
-  margin: 3px 0 0 0;
-
-  @media (min-width: $tablet-width) {
-    height: 9px;
-    width: 9px;
-    border-radius: 50%;
-    background: $basic-green;
-    border: 11px solid $basic-white;
-    cursor: pointer;
-    box-shadow: 0 0 0 1px $special-grey-toggle, 0 1px 3px $special-grey-toggle;
-    margin-top: -14px;
-
-    &:hover {
-      box-shadow: 0 0 0 1px $special-grey-toggle, 0 2px 4px $special-grey-toggle;
+        @media (max-width: $adaptive-width) {
+            margin: 0 -#{$spacing-2l};
+        }
     }
 
-    &:active {
-      box-shadow: 0 0 0 1px $basic-green, 0 1px 3px $special-grey-toggle;
+    &__photo {
+        display: block;
+        margin: 0 auto;
     }
-  }
-}
 
-.slider__range::-moz-range-track {
-  width: 84px;
-  height: 14px;
-  background: $basic-white;
-  border: 1px solid $special-grey-toggle;
-  padding: 0 4px 0 5px;
-  border-radius: 6px;
+    &__button {
+        min-width: 64px;
+        min-height: 64px;
+        border-radius: 50%;
+        border: 1px solid $line;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
+        background-color: $bg-white;
+        position: relative;
+        z-index: 1;
+        
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    height: 6px;
-    cursor: pointer;
-    background: $special-grey-toggle;
-    border-radius: 3px;
-    border: none;
-  }
+        &_prev {
+            left: 32px;
+        }
+
+        &_next {
+            right: 32px;
+        }
+
+        @media (max-width: $adaptive-width) {
+            display: none;
+        }
+    }
+
+    &__plate {
+        width: 410px;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(16px);
+        border-radius: 24px;
+        top: 40px;
+        left: 44px;
+        padding: $spacing-2xl $spacing-4xl $spacing-2xl $spacing-2xl;
+
+        @media (max-width: $adaptive-width) {
+            width: auto;
+            top: 26px;
+            left: 20px;
+            right: 20px;
+            padding: $spacing-2xl $spacing-2l $spacing-2l;
+        }
+    }
+
+    &__plate-title {
+        margin-bottom: $spacing-m;
+    }
+
+    &__plate-descr {
+        @include P-14-medium;
+        color: $text-primary;
+        margin-bottom: $spacing-3xl;
+
+        @media (max-width: $adaptive-width) {
+            margin-bottom: $spacing-2l;
+        }
+    }
+
+    &__photo-container {
+        position: relative;
+    }
+
+    &__points {
+        position: absolute;
+        bottom: 55px;
+        left: 44px;
+
+        @media (max-width: $adaptive-width) {
+            bottom: $spacing-2xl;
+            left: 24px;
+        }
+    }
+
+    &__point-list {
+        display: flex;
+        gap: $spacing-m;
+    }
+
+    &__point-item {
+        min-width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $bg-white;
+        opacity: 0.5;
+
+        &_is-active {
+            box-shadow: 0 0 0 4px $bg-white;
+            opacity: 1;
+            background-color: transparent;
+        }
+    }
 }

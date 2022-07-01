@@ -1,65 +1,109 @@
 .nav {
-  font-size: 20px;
-  line-height: $lh-additional;
-  font-weight: $fw-medium;
-  text-transform: uppercase;
-  color: $basic-black;
-  font-family: $font-additional;
-}
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 10% 0;
+  gap: $spacing-2l;
 
-.nav__item {
-  padding-top: 22px;
-  padding-bottom: 24px;
-  border-top: 1px solid $special-light-grey;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    border-top: none;
-    padding-bottom: 10px;
-    padding-top: 10px;
+  @media (max-width: $adaptive-width) {
+    padding: 0;
   }
-}
 
-.nav__list {
-  @media (min-width: $tablet-width) {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-2xl;
+  }
+
+  &__list {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    column-gap: 25px;
+    gap: 32px;
+
+    &_actions {
+      gap: 24px;
+      align-items: baseline;
+
+      @media (max-width: $adaptive-width) {
+        gap: 20px;
+      }
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    position: relative;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $secondary;
+    }
+
+    &_is-active {
+      &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: $secondary;
+        top: -52px;
+      }
+
+      .nav__link {
+        color: $secondary;
+      }
+    }
+
+    &_add {
+      display: flex;
+      align-items: center;
+      gap: $spacing-s;
+
+      &:hover {
+        .nav__add {
+          background-color: $secondary;
+        }
+      }
+    }
+
+    &_user {
+      display: flex;
+      align-items: center;
+      gap: $spacing-xs;
+    }
+
+    &_burger {
+      display: none;
+
+      @media (max-width: $adaptive-width) {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    @include P-14-medium;
+  }
+
+  &__logo-svg {
+    margin-right: 4px;
+  }
+
+  &__add {
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .nav__list--main .nav__item--active {
-    border-bottom: 2px solid $basic-white;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .nav__item--active {
-    border-bottom: 2px solid $basic-green;
-  }
-}
-
-.nav__link {
-  color: $basic-black;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .nav__link--main {
-    color: $basic-white;
+@media (max-width: $adaptive-width) {
+  .nav__list_hidden {
+    display: none;
   }
 }

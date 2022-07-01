@@ -9,6 +9,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 ul {
@@ -17,103 +18,100 @@ ul {
   padding: 0;
 }
 
-body {
+h1, h2, h3, h4, p {
   margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: $text-primary;
+
+  @media (max-width: $adaptive-width) {
+      font-size: 24px;
+      line-height: 32px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 800;
+  color: $text-primary;
+
+  @media (max-width: $adaptive-width) {
+      font-size: 20px;
+      line-height: 26px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: $text-primary;
+
+  @media (max-width: $adaptive-width) {
+      font-size: 18px;
+      line-height: 26px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+
+  @media (max-width: $adaptive-width) {
+      font-size: 16px;
+      line-height: 26px;
+  }
+}
+
+body {
+  min-width: $modile-width;
+  font-family: 'Inter', 'Arial', sans-serif;;
+  margin: 0 auto;
   padding: 0;
-  font-size: $fs-main;
-  line-height: $lh-main;
-  font-family: $font-main;
-  font-weight: $fw-normal;
-  color: $special-dark-grey;
+  background-color: $bg;
   overflow-x: hidden;
+}
 
-  @media (min-width: $tablet-width) {
-    font-size: $fs-additional;
-    line-height: 24px;
+svg {
+  min-width: 24px;
+}
+
+.button-primary {
+  background-color: $secondary;
+  color: $bg-white;
+  border-radius: 24px;
+  padding: $spacing-m $spacing-2l;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary;
   }
 }
 
-.box {
-  max-width: $modile-width;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
-    padding: 0 110px;
-  }
-}
-
-@mixin box {
-  max-width: $modile-width;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
-    padding: 0 110px;
-  }
-}
-
-@mixin box--form {
-  max-width: $modile-width;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-    padding: 0 67px 0 69px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
-    padding: 0 110px;
-  }
-}
-
-@mixin box--map {
-  max-width: $modile-width;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
-  }
-}
-
-.button {
-  background-color: $basic-green;
-  color: $basic-white;
+.button-secondary {
+  background-color: transparent;
+  color: $text-primary;
+  border-radius: 24px;
+  padding: $spacing-m $spacing-2l;
+  border: 2px solid $line;
   text-align: center;
   cursor: pointer;
   transition: all 0.2s;
 
-  &:hover {
-    background-color: $basic-dark-green;
-  }
-
+  &:hover,
+  &:focus,
   &:active {
-    color: $basic-white--active;
-  }
-}
-
-.box-mobile {
-  @media (max-width: 767px) {
-    min-width: $modile-width;
-    margin: 0 auto;
-    padding: 0 20px;
+    border-color: $primary;
   }
 }
